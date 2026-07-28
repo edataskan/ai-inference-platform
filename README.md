@@ -67,11 +67,11 @@ docker compose up --build --scale worker=3
 
 **Kubernetes (Minikube) Deployment (Faz 4)**
 
-  minikube addons enable ingress
+    minikube addons enable ingress
   
-  kubectl apply -f deploy/k8s/
+    kubectl apply -f deploy/k8s/
   
-  minikube tunnel
+    minikube tunnel
 
 ## Neden bu teknolojiler?
 
