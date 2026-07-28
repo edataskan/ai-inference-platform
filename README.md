@@ -66,8 +66,11 @@ docker compose up --build --scale worker=3
 -Görseli /upload endpoint'ine gönderdiğiniz an sonuç WebSocket konsoluna düşecektir.
 
 **Kubernetes (Minikube) Deployment (Faz 4)**
+
   minikube addons enable ingress
+  
   kubectl apply -f deploy/k8s/
+  
   minikube tunnel
 
 ## Neden bu teknolojiler?
