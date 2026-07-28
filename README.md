@@ -66,16 +66,10 @@ docker compose up --build --scale worker=3
 -Görseli /upload endpoint'ine gönderdiğiniz an sonuç WebSocket konsoluna düşecektir.
 
 **Kubernetes (Minikube) Deployment (Faz 4)**
-  # 1. Minikube'da Ingress eklentisini aktif edin
   minikube addons enable ingress
-
-  # 2. Manifest dosyalarını uygulayın
   kubectl apply -f deploy/k8s/
-
-  # 3. Minikube tünelini başlatın (Ingress erişimi için)
   minikube tunnel
 
-  
 ## Neden bu teknolojiler?
 
 - **Go**: API ve worker'larda concurrency ve düşük memory footprint için.
